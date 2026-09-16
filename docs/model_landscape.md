@@ -1,15 +1,5 @@
 # Polymer Property Prediction Model Landscape
 
-## Scope
-
-This document summarizes open-source models relevant to polymer property prediction for:
-
-- Glass transition temperature (Tg)
-- Density
-- Melting temperature (Tm)
-- Thermal conductivity
-- Gas permeability
-
 ## Comparison Table
 
 | Model | Property focus | Representation | Model type | Main advantage | GitHub |
@@ -64,20 +54,8 @@ This document summarizes open-source models relevant to polymer property predict
 - Can combine experimental, MD, DFT, and other fidelity levels
 - Includes released checkpoints, training scripts, inference tools, metrics, and plotting workflows
 
-## Connection to Previous Work
-
-Previous work primarily followed:
-
-SMILES -> fixed or pretrained representation -> regression model -> one property
-
-Examples:
-- Morgan / RDKit / MACCS -> Random Forest or XGBoost
-- PolyEmb -> Random Forest or XGBoost
-- Single-task RNN
-- Single-task GNN
 
 The newer model families add:
-
 1. **Pretraining** — learn a general polymer representation before fitting a property model.
 2. **Multitask learning** — train one model across several properties.
 3. **Multi-fidelity learning** — combine data from different sources such as experiment, MD, and DFT.
@@ -91,5 +69,3 @@ A useful first comparison would be:
 3. Pretrained representation model such as polyBERT
 4. Multitask graph model such as polyGNN
 5. Multitask, multi-fidelity graph model such as PolyGraphMT
-
-The main research question is when simpler fingerprint/embedding models are competitive with GNNs and when multitask or multi-fidelity learning improves performance, especially for smaller property datasets.
