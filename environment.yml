@@ -1,0 +1,14 @@
+name: polygraphmt
+channels:
+  - defaults
+dependencies:
+  - pandas=2.2
+  - optuna=3.6
+  - tqdm=4.66
+  - rdkit=2024.03
+  - matplotlib=3.8
+  - numpy=1.26
+  - python=3.11
+  - scipy=1.11
+  - pip
+prefix: C:\Users\santi\anaconda3\envs\polygraphmt
