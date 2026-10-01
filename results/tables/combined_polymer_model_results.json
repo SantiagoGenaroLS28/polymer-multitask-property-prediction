@@ -1,0 +1,373 @@
+{
+  "project": "Polymer Property Prediction Model Comparison",
+  "properties": {
+    "rho": {
+      "name": "Density",
+      "results": [
+        {
+          "model": "PolyGraphMT Multitask",
+          "representation": "Graph",
+          "r2": 0.7980865836,
+          "mae": 0.0539874211,
+          "rmse": 0.0961994082
+        },
+        {
+          "model": "PolyGraphMT Single-Task",
+          "representation": "Graph",
+          "r2": 0.7861531973,
+          "mae": 0.0542499721,
+          "rmse": 0.0990013704
+        },
+        {
+          "model": "XGBoost",
+          "representation": "MACCS_167",
+          "r2": 0.775127864,
+          "mae": 0.0563399444,
+          "rmse": 0.1015214073
+        },
+        {
+          "model": "XGBoost",
+          "representation": "Morgan_2048",
+          "r2": 0.7607599976,
+          "mae": 0.0612531888,
+          "rmse": 0.1047144717
+        },
+        {
+          "model": "Random Forest",
+          "representation": "MACCS_167",
+          "r2": 0.7590595201,
+          "mae": 0.0602579613,
+          "rmse": 0.1050859591
+        },
+        {
+          "model": "XGBoost",
+          "representation": "PolyEmb_300",
+          "r2": 0.7390295328,
+          "mae": 0.0569976058,
+          "rmse": 0.1093667958
+        },
+        {
+          "model": "Random Forest",
+          "representation": "Morgan_2048",
+          "r2": 0.7269273985,
+          "mae": 0.0646445357,
+          "rmse": 0.1118739239
+        },
+        {
+          "model": "Random Forest",
+          "representation": "PolyEmb_300",
+          "r2": 0.7126947855,
+          "mae": 0.0623754938,
+          "rmse": 0.1147523429
+        },
+        {
+          "model": "XGBoost",
+          "representation": "RDKit_2048",
+          "r2": 0.6784965337,
+          "mae": 0.0627571802,
+          "rmse": 0.1213899232
+        },
+        {
+          "model": "Random Forest",
+          "representation": "RDKit_2048",
+          "r2": 0.6258623692,
+          "mae": 0.067876542,
+          "rmse": 0.13095
+        },
+        {
+          "model": "polyGNN",
+          "representation": "Morgan_512 / MLP workflow",
+          "r2": 0.5992,
+          "mae": 0.0826,
+          "rmse": 0.1355
+        }
+      ]
+    },
+    "tg": {
+      "name": "Glass Transition Temperature",
+      "results": [
+        {
+          "model": "XGBoost",
+          "representation": "RDKit_2048",
+          "r2": 0.8863667651,
+          "mae": 25.2386382486,
+          "rmse": 38.1953460526
+        },
+        {
+          "model": "PolyGraphMT Single-Task",
+          "representation": "Graph",
+          "r2": 0.8852264285,
+          "mae": 25.0489426,
+          "rmse": 38.3865166
+        },
+        {
+          "model": "polyGNN",
+          "representation": "Morgan_512 / MLP workflow",
+          "r2": 0.883,
+          "mae": 26.6116,
+          "rmse": 38.7568
+        },
+        {
+          "model": "XGBoost",
+          "representation": "PolyEmb_300",
+          "r2": 0.8821094247,
+          "mae": 26.0582133474,
+          "rmse": 38.9042733035
+        },
+        {
+          "model": "PolyGraphMT Multitask",
+          "representation": "Graph",
+          "r2": 0.8766403794,
+          "mae": 26.4956379,
+          "rmse": 39.7964516
+        },
+        {
+          "model": "Random Forest",
+          "representation": "Morgan_2048",
+          "r2": 0.8754780261,
+          "mae": 26.8217051456,
+          "rmse": 39.9834957885
+        },
+        {
+          "model": "XGBoost",
+          "representation": "Morgan_2048",
+          "r2": 0.8735115285,
+          "mae": 27.8786274449,
+          "rmse": 40.2979762265
+        },
+        {
+          "model": "Random Forest",
+          "representation": "PolyEmb_300",
+          "r2": 0.8696604275,
+          "mae": 28.4752752276,
+          "rmse": 40.9068379202
+        },
+        {
+          "model": "Random Forest",
+          "representation": "MACCS_167",
+          "r2": 0.8645019099,
+          "mae": 28.7784205319,
+          "rmse": 41.708478834
+        },
+        {
+          "model": "Random Forest",
+          "representation": "RDKit_2048",
+          "r2": 0.8641740096,
+          "mae": 28.0895507063,
+          "rmse": 41.7589148121
+        },
+        {
+          "model": "XGBoost",
+          "representation": "MACCS_167",
+          "r2": 0.8591944956,
+          "mae": 29.2801476885,
+          "rmse": 42.5174862869
+        },
+        {
+          "model": "UQ-polymer-Tg Ensemble",
+          "representation": "Morgan-count",
+          "r2": 0.8305316567,
+          "mae": 30.3162193,
+          "rmse": 46.6446737
+        }
+      ]
+    },
+    "tm": {
+      "name": "Melting Temperature",
+      "results": [
+        {
+          "model": "polyGNN",
+          "representation": "Morgan_512 / MLP workflow",
+          "r2": 0.7688,
+          "mae": 38.9319,
+          "rmse": 54.3659
+        },
+        {
+          "model": "PolyGraphMT Single-Task",
+          "representation": "Graph",
+          "r2": 0.7636057734,
+          "mae": 38.2754326,
+          "rmse": 54.9748802
+        },
+        {
+          "model": "PolyGraphMT Multitask",
+          "representation": "Graph",
+          "r2": 0.7509048581,
+          "mae": 38.2617111,
+          "rmse": 56.4323959
+        },
+        {
+          "model": "XGBoost",
+          "representation": "Morgan_2048",
+          "r2": 0.7458167736,
+          "mae": 40.4813210864,
+          "rmse": 57.0058301366
+        },
+        {
+          "model": "XGBoost",
+          "representation": "PolyEmb_300",
+          "r2": 0.7344731031,
+          "mae": 40.8649309015,
+          "rmse": 58.2639722976
+        },
+        {
+          "model": "XGBoost",
+          "representation": "RDKit_2048",
+          "r2": 0.7293309634,
+          "mae": 40.8359898558,
+          "rmse": 58.8254311463
+        },
+        {
+          "model": "Random Forest",
+          "representation": "Morgan_2048",
+          "r2": 0.7275844495,
+          "mae": 41.4304005868,
+          "rmse": 59.0149139075
+        },
+        {
+          "model": "Random Forest",
+          "representation": "PolyEmb_300",
+          "r2": 0.7191925522,
+          "mae": 43.3034485775,
+          "rmse": 59.9170111917
+        },
+        {
+          "model": "Random Forest",
+          "representation": "MACCS_167",
+          "r2": 0.7152265967,
+          "mae": 43.435821467,
+          "rmse": 60.3386435987
+        },
+        {
+          "model": "Random Forest",
+          "representation": "RDKit_2048",
+          "r2": 0.7143300302,
+          "mae": 43.4089984231,
+          "rmse": 60.4335525638
+        },
+        {
+          "model": "XGBoost",
+          "representation": "MACCS_167",
+          "r2": 0.7084299639,
+          "mae": 43.4532019491,
+          "rmse": 61.0544433012
+        }
+      ]
+    },
+    "tc": {
+      "name": "Thermal Conductivity",
+      "results": [
+        {
+          "model": "Random Forest",
+          "representation": "PolyEmb_300",
+          "r2": 0.747966,
+          "mae": 0.017394,
+          "rmse": 0.02283
+        },
+        {
+          "model": "XGBoost",
+          "representation": "PolyEmb_300",
+          "r2": 0.725,
+          "mae": 0.018,
+          "rmse": 0.0238
+        },
+        {
+          "model": "Random Forest",
+          "representation": "Morgan_2048",
+          "r2": 0.636455,
+          "mae": 0.022172,
+          "rmse": 0.02742
+        },
+        {
+          "model": "IMLforPTC-style Random Forest",
+          "representation": "Morgan-count",
+          "r2": 0.574379872,
+          "mae": 0.0240801583,
+          "rmse": 0.0296685246
+        },
+        {
+          "model": "GNN",
+          "representation": "Graph",
+          "r2": 0.553,
+          "mae": 0.0277,
+          "rmse": 0.0357
+        },
+        {
+          "model": "Random Forest",
+          "representation": "RDKit_2048",
+          "r2": 0.328105,
+          "mae": 0.028579,
+          "rmse": 0.037277
+        },
+        {
+          "model": "RNN",
+          "representation": "Sequence",
+          "r2": 0.326,
+          "mae": 0.035,
+          "rmse": 0.0438
+        },
+        {
+          "model": "XGBoost",
+          "representation": "RDKit_2048",
+          "r2": 0.176,
+          "mae": 0.0306,
+          "rmse": 0.0413
+        },
+        {
+          "model": "XGBoost",
+          "representation": "Morgan_2048",
+          "r2": 0.136,
+          "mae": 0.0317,
+          "rmse": 0.0423
+        },
+        {
+          "model": "Random Forest",
+          "representation": "MACCS_167",
+          "r2": -0.025032,
+          "mae": 0.032785,
+          "rmse": 0.046042
+        },
+        {
+          "model": "XGBoost",
+          "representation": "MACCS_167",
+          "r2": -1.075,
+          "mae": 0.0381,
+          "rmse": 0.0655
+        }
+      ]
+    }
+  },
+  "best_by_property": {
+    "rho": {
+      "model": "PolyGraphMT Multitask",
+      "representation": "Graph",
+      "r2": 0.7980865836,
+      "rmse": 0.0961994082
+    },
+    "tg": {
+      "model": "XGBoost",
+      "representation": "RDKit_2048",
+      "r2": 0.8863667651,
+      "rmse": 38.1953460526
+    },
+    "tm": {
+      "model": "polyGNN",
+      "representation": "Morgan_512 / MLP workflow",
+      "r2": 0.7688,
+      "rmse": 54.3659
+    },
+    "tc": {
+      "model": "Random Forest",
+      "representation": "PolyEmb_300",
+      "r2": 0.747966,
+      "rmse": 0.02283
+    }
+  },
+  "notes": [
+    "rho, Tg, and Tm results use the same master SMILES train/validation/test split.",
+    "The shared master split contains 6710 train, 1438 validation, and 1438 test unique SMILES.",
+    "Each property uses only the polymers for which that property is available.",
+    "Thermal-conductivity results come from the earlier TC-specific workflow and should be treated as a separate benchmark.",
+    "Representation effectiveness is property-dependent rather than universal."
+  ]
+}
