@@ -11,9 +11,11 @@ venv/
 *.pt
 *.pth
 *.npy
+*.joblib
 
-.DS_Store
-Thumbs.dbdata/raw/
 features_rho_tg_tm/
 models/checkpoints/
-*.joblib
+data/raw/
+
+.DS_Store
+Thumbs.db
